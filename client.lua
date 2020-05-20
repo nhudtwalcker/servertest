@@ -10,7 +10,7 @@ Citizen.CreateThread(function()
         local playerPed = GetPlayerPed(-1)
         if IsPedInAnyVehicle(playerPed, false) then
             local playerVeh = GetVehiclePedIsIn(playerPed, false)
-            local vehPlates = "TSTPLATE1"
+            local vehPlates = "TSTPLATE1" --hard coded just to test
             TriggerServerEvent("servertest:sendInfo", vehPlates) --this trigger never happens even though criteria is met
 
         end
